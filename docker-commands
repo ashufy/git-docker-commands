@@ -1,1 +1,16 @@
+docker --version                # check version
+docker info                     # runtime info
 
+docker search ubuntu            # find images on Docker Hub
+docker pull nginx:latest        # download an image
+docker images                   # list local images
+docker rmi nginx:latest         # remove an image
+
+docker run hello-world                         # run a one-shot container
+docker ps                                      # running containers
+docker ps -a                                   # all containers (stopped too)
+docker stop web                                # stop container
+docker start web                               # start again
+docker restart web                             # restart
+docker rm web                                  # remove container
+docker rm -f web                               # force remove (kills if running)
